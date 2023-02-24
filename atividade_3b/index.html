@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade - 3B</title>
+</head>
+<body>
+
+<!--Questão 1-->
+    <script>
+
+        const meuObjeto = {
+  propriedadeTexto: "Olá mundo!",
+  propriedadeNumero: 42,
+  propriedadeBooleana: true,
+    };
+    </script>
+
+<!--Questão 2-->
+    <script>
+        const Pessoa = {
+  nome: "Bruno",
+  exibirNome() {
+    console.log(this.nome);
+  },
+};
+Pessoa.exibirNome();
+
+</script>
+
+<!--Questão 3-->
+<script>
+    
+const nome1 = prompt("Digite o nome da primeira pessoa:");
+const idade1 = parseInt(prompt("Digite a idade da primeira pessoa:"));
+
+const nome2 = prompt("Digite o nome da segunda pessoa:");
+const idade2 = parseInt(prompt("Digite a idade da segunda pessoa:"));
+
+let nomeMaisVelho;
+if (idade1 > idade2) {
+  nomeMaisVelho = nome1;
+} else {
+  nomeMaisVelho = nome2;
+}
+
+console.log(`A pessoa mais velha é ${nomeMaisVelho}.`);
+
+</script>
+
+<!--Questão 4-->
+<script>
+    
+const name1 = prompt("Digite o nome do primeiro funcionário:");
+const salario1 = parseFloat(prompt("Digite o salário do primeiro funcionário:"));
+
+const name2 = prompt("Digite o nome do segundo funcionário:");
+const salario2 = parseFloat(prompt("Digite o salário do segundo funcionário:"));
+
+const salarioMedio = (salario1 + salario2) / 2;
+
+console.log(`O salário médio dos funcionários é R$ ${salarioMedio.toFixed(2)}.`);
+
+</script>
+
+<!--Questão 5-->
+<script>
+
+const largura = parseFloat(prompt("Digite a largura do retângulo:"));
+const altura = parseFloat(prompt("Digite a altura do retângulo:"));
+
+const area = largura * altura;
+const perimetro = 2 * (largura + altura);
+const diagonal = Math.sqrt(largura ** 2 + altura ** 2);
+
+console.log(`Área: ${area.toFixed(2)}`);
+console.log(`Perímetro: ${perimetro.toFixed(2)}`);
+console.log(`Diagonal: ${diagonal.toFixed(2)}`);
+
+</script>
+</body>
+</html>
